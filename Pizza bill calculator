@@ -1,0 +1,20 @@
+print("Python pizza delivaries!!!")
+size=input("What size of pizza do you want? S,M or L : ")
+bill=0
+if size=="S":
+    bill=15
+    ps=input("Do you wnat to add pepproni? Y or N: ")
+    if ps=="Y":
+        bill=bill+2
+else:
+    if size=="M":
+        bill=20
+    else:
+        bill=25
+    p=input("Do you want to add pepproni? Y or N: ")
+    if p=="Y":
+        bill=bill+3
+c=input("Do you want to add extra chesse?Y or N: ")
+if c=="Y":
+    bill+=1
+print(f"Your bill:${bill}")
